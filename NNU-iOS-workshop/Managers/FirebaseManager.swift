@@ -51,8 +51,6 @@ class FirebaseManager: NSObject {
 
     func addMessage(model: ChatModel) {
 
-        let value =  model.toJSON()
-
-        self.ref?.child("messages").childByAutoId().setValue(value)
+        self.ref?.child("messages").childByAutoId().setValue(model.toJSON())
     }
 }
