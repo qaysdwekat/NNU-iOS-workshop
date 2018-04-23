@@ -17,28 +17,38 @@ class MainViewController: UIViewController {
 
     var models:[ChatModel] = []
 
+    override func viewDidLoad() {
+
+        super.viewDidLoad()
+
+        FirebaseManager.sharedInstance.observeMessages(deleget: self)
+    }
+
     @IBAction func sendAction(_ sender: Any) {
 
         if let text = textField?.text, !text.isEmpty {
 
             let model = ChatModel(senderName: "Qays Dwekat", message: text)
 
-            models.append(model)
-
-            let indexPath = IndexPath(row: (models.count - 1), section: 0)
-
-            self.tableView?.insertRows(at: [indexPath], with: .automatic)
-
-            self.tableView?.scrollToRow(at: indexPath, at: .top, animated: true)
+            FirebaseManager.sharedInstance.addMessage(model: model)
 
             textField?.text = nil
         }
     }
 }
 
-extension MainViewController: UITableViewDelegate {
+extension MainViewController: ChatDelegate {
 
+    func didAddValue(model: ChatModel) {
 
+        models.append(model)
+
+        let indexPath = IndexPath(row: (models.count - 1), section: 0)
+
+        self.tableView?.insertRows(at: [indexPath], with: .automatic)
+
+        self.tableView?.scrollToRow(at: indexPath, at: .top, animated: true)
+    }
 }
 
 extension MainViewController: UITableViewDataSource {
