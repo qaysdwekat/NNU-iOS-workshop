@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111E25B60C3CC797A36EA67F /* Pods_NNU_iOS_workshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E8F47ABA231A5397B65B45 /* Pods_NNU_iOS_workshop.framework */; };
+		5688B411208DBFA300E9E169 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688B410208DBFA300E9E169 /* ChatTableViewCell.swift */; };
+		5688B413208DC3D300E9E169 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688B412208DC3D300E9E169 /* ChatModel.swift */; };
+		5688B41C208DFBD000E9E169 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5688B41B208DFBD000E9E169 /* GoogleService-Info.plist */; };
+		5688B41F208DFBFF00E9E169 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688B41E208DFBFF00E9E169 /* FirebaseManager.swift */; };
+		56D7D4A9208A4F550073261D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D7D4A8208A4F550073261D /* AppDelegate.swift */; };
+		56D7D4B0208A4F590073261D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7D4AF208A4F590073261D /* Assets.xcassets */; };
+		56D7D4B3208A4F590073261D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D7D4B1208A4F590073261D /* LaunchScreen.storyboard */; };
+		56D7D4BC208A51380073261D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D7D4BB208A51380073261D /* MainStoryboard.storyboard */; };
+		56D7D4BE208A514B0073261D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D7D4BD208A514B0073261D /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17F00538B4EBB61C0B55B4E8 /* Pods-NNU-iOS-workshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNU-iOS-workshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNU-iOS-workshop/Pods-NNU-iOS-workshop.release.xcconfig"; sourceTree = "<group>"; };
+		5688B410208DBFA300E9E169 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		5688B412208DC3D300E9E169 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		5688B41B208DFBD000E9E169 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5688B41E208DFBFF00E9E169 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		56D7D4A5208A4F550073261D /* NNU-iOS-workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NNU-iOS-workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D7D4A8208A4F550073261D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		56D7D4AF208A4F590073261D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56D7D4B2208A4F590073261D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56D7D4B4208A4F590073261D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D7D4BB208A51380073261D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		56D7D4BD208A514B0073261D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BFC4B90320641AB888D45748 /* Pods-NNU-iOS-workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNU-iOS-workshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNU-iOS-workshop/Pods-NNU-iOS-workshop.debug.xcconfig"; sourceTree = "<group>"; };
+		E3E8F47ABA231A5397B65B45 /* Pods_NNU_iOS_workshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNU_iOS_workshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56D7D4A2208A4F550073261D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111E25B60C3CC797A36EA67F /* Pods_NNU_iOS_workshop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A4455E4BC0F943987C643E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3E8F47ABA231A5397B65B45 /* Pods_NNU_iOS_workshop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5688B41D208DFBD800E9E169 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				5688B41E208DFBFF00E9E169 /* FirebaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		56D7D49C208A4F550073261D = {
+			isa = PBXGroup;
+			children = (
+				56D7D4A7208A4F550073261D /* NNU-iOS-workshop */,
+				56D7D4A6208A4F550073261D /* Products */,
+				91B8941F2EB37CC19C52AA10 /* Pods */,
+				1A4455E4BC0F943987C643E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56D7D4A6208A4F550073261D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56D7D4A5208A4F550073261D /* NNU-iOS-workshop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56D7D4A7208A4F550073261D /* NNU-iOS-workshop */ = {
+			isa = PBXGroup;
+			children = (
+				5688B41D208DFBD800E9E169 /* Managers */,
+				56D7D4BA208A51060073261D /* MainViewController */,
+				56D7D4A8208A4F550073261D /* AppDelegate.swift */,
+				56D7D4AF208A4F590073261D /* Assets.xcassets */,
+				56D7D4B1208A4F590073261D /* LaunchScreen.storyboard */,
+				5688B41B208DFBD000E9E169 /* GoogleService-Info.plist */,
+				56D7D4B4208A4F590073261D /* Info.plist */,
+			);
+			path = "NNU-iOS-workshop";
+			sourceTree = "<group>";
+		};
+		56D7D4BA208A51060073261D /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				56D7D4BB208A51380073261D /* MainStoryboard.storyboard */,
+				56D7D4BD208A514B0073261D /* MainViewController.swift */,
+				5688B410208DBFA300E9E169 /* ChatTableViewCell.swift */,
+				5688B412208DC3D300E9E169 /* ChatModel.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		91B8941F2EB37CC19C52AA10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFC4B90320641AB888D45748 /* Pods-NNU-iOS-workshop.debug.xcconfig */,
+				17F00538B4EBB61C0B55B4E8 /* Pods-NNU-iOS-workshop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56D7D4A4208A4F550073261D /* NNU-iOS-workshop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D7D4B7208A4F590073261D /* Build configuration list for PBXNativeTarget "NNU-iOS-workshop" */;
+			buildPhases = (
+				0B27751DC7F2BD7D0538FCEB /* [CP] Check Pods Manifest.lock */,
+				56D7D4A1208A4F550073261D /* Sources */,
+				56D7D4A2208A4F550073261D /* Frameworks */,
+				56D7D4A3208A4F550073261D /* Resources */,
+				364623807B50A3FBF1F54F88 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NNU-iOS-workshop";
+			productName = "NNU-iOS-workshop";
+			productReference = 56D7D4A5208A4F550073261D /* NNU-iOS-workshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56D7D49D208A4F550073261D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Qays Dwekat";
+				TargetAttributes = {
+					56D7D4A4208A4F550073261D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 56D7D4A0208A4F550073261D /* Build configuration list for PBXProject "NNU-iOS-workshop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56D7D49C208A4F550073261D;
+			productRefGroup = 56D7D4A6208A4F550073261D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56D7D4A4208A4F550073261D /* NNU-iOS-workshop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56D7D4A3208A4F550073261D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D7D4BC208A51380073261D /* MainStoryboard.storyboard in Resources */,
+				5688B41C208DFBD000E9E169 /* GoogleService-Info.plist in Resources */,
+				56D7D4B3208A4F590073261D /* LaunchScreen.storyboard in Resources */,
+				56D7D4B0208A4F590073261D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B27751DC7F2BD7D0538FCEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NNU-iOS-workshop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		364623807B50A3FBF1F54F88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NNU-iOS-workshop/Pods-NNU-iOS-workshop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNU-iOS-workshop/Pods-NNU-iOS-workshop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56D7D4A1208A4F550073261D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5688B411208DBFA300E9E169 /* ChatTableViewCell.swift in Sources */,
+				56D7D4A9208A4F550073261D /* AppDelegate.swift in Sources */,
+				5688B41F208DFBFF00E9E169 /* FirebaseManager.swift in Sources */,
+				56D7D4BE208A514B0073261D /* MainViewController.swift in Sources */,
+				5688B413208DC3D300E9E169 /* ChatModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		56D7D4B1208A4F590073261D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D7D4B2208A4F590073261D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56D7D4B5208A4F590073261D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		56D7D4B6208A4F590073261D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56D7D4B8208A4F590073261D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFC4B90320641AB888D45748 /* Pods-NNU-iOS-workshop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NNU-iOS-workshop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NNU-iOS-workshop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56D7D4B9208A4F590073261D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F00538B4EBB61C0B55B4E8 /* Pods-NNU-iOS-workshop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NNU-iOS-workshop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.NNU-iOS-workshop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56D7D4A0208A4F550073261D /* Build configuration list for PBXProject "NNU-iOS-workshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D7D4B5208A4F590073261D /* Debug */,
+				56D7D4B6208A4F590073261D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D7D4B7208A4F590073261D /* Build configuration list for PBXNativeTarget "NNU-iOS-workshop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D7D4B8208A4F590073261D /* Debug */,
+				56D7D4B9208A4F590073261D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56D7D49D208A4F550073261D /* Project object */;
+}
