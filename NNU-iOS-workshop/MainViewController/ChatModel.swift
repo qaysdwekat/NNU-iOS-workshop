@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import ObjectMapper
 
-class ChatModel: Mappable {
+class ChatModel {
 
     var imageURL: String?
 
@@ -26,16 +25,5 @@ class ChatModel: Mappable {
 
     init() {
 
-    }
-
-    required init?(map: Map) {
-
-    }
-
-    func mapping(map: Map) {
-
-        imageURL            <- map["photoUrl"]
-        senderName          <- map["messagesSender"]
-        message             <- map["text"]
     }
 }

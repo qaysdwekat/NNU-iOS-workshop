@@ -20,8 +20,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-
-        FirebaseManager.sharedInstance.observeMessages(deleget: self)
     }
 
     @IBAction func sendAction(_ sender: Any) {
@@ -30,24 +28,16 @@ class MainViewController: UIViewController {
 
             let model = ChatModel(senderName: "Qays Dwekat", message: text)
 
-            FirebaseManager.sharedInstance.addMessage(model: model)
+            models.append(model)
+
+            let indexPath = IndexPath(row: (models.count - 1), section: 0)
+
+            self.tableView?.insertRows(at: [indexPath], with: .automatic)
+
+            self.tableView?.scrollToRow(at: indexPath, at: .top, animated: true)
 
             textField?.text = nil
         }
-    }
-}
-
-extension MainViewController: ChatDelegate {
-
-    func didAddValue(model: ChatModel) {
-
-        models.append(model)
-
-        let indexPath = IndexPath(row: (models.count - 1), section: 0)
-
-        self.tableView?.insertRows(at: [indexPath], with: .automatic)
-
-        self.tableView?.scrollToRow(at: indexPath, at: .top, animated: true)
     }
 }
 

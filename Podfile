@@ -6,9 +6,6 @@ target 'NNU-iOS-workshop' do
   use_frameworks!
 
   # Pods for NNU-iOS-workshop
-	pod 'ObjectMapper'
-	pod 'Firebase'
-	pod 'Firebase/Database'
 	pod 'Kingfisher', '~> 4.0'
 
 end
