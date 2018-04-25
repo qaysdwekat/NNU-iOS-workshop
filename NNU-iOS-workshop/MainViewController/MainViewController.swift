@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
 
         if let text = textField?.text, !text.isEmpty {
 
-            let model = ChatModel(senderName: "Qays Dwekat", message: text)
+            let model = ChatModel(senderName: "Qays Dwekat", message: text, imageUrl: "https://coronalabs.com/wordpress/wp-content/uploads/2014/06/apple.jpg")
 
             models.append(model)
 

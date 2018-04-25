@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 class ChatTableViewCell: UITableViewCell {
 
@@ -26,6 +27,8 @@ class ChatTableViewCell: UITableViewCell {
             self.senderNameLV.text = chatModel.senderName
             
             self.messageLV.text = chatModel.message
+
+            self.chatImage.kf.setImage(with: URL(string: chatModel.imageUrl ?? ""))
         }
     }
 }

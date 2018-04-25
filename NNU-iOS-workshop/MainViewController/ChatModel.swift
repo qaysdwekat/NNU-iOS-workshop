@@ -14,11 +14,13 @@ class ChatModel {
 
     var message:String?
 
-    init(senderName:String, message:String) {
+    var imageUrl:String?
 
-//        super.init()
+    init(senderName:String, message:String, imageUrl:String?) {
+
         self.senderName = senderName
         self.message = message
+        self.imageUrl = imageUrl
     }
 
     init() {

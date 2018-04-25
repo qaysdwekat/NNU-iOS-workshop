@@ -11,7 +11,6 @@
 		5688B411208DBFA300E9E169 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688B410208DBFA300E9E169 /* ChatTableViewCell.swift */; };
 		5688B413208DC3D300E9E169 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688B412208DC3D300E9E169 /* ChatModel.swift */; };
 		5688B41C208DFBD000E9E169 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5688B41B208DFBD000E9E169 /* GoogleService-Info.plist */; };
-		5688B41F208DFBFF00E9E169 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688B41E208DFBFF00E9E169 /* FirebaseManager.swift */; };
 		56D7D4A9208A4F550073261D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D7D4A8208A4F550073261D /* AppDelegate.swift */; };
 		56D7D4B0208A4F590073261D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D7D4AF208A4F590073261D /* Assets.xcassets */; };
 		56D7D4B3208A4F590073261D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D7D4B1208A4F590073261D /* LaunchScreen.storyboard */; };
@@ -24,7 +23,6 @@
 		5688B410208DBFA300E9E169 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		5688B412208DC3D300E9E169 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		5688B41B208DFBD000E9E169 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5688B41E208DFBFF00E9E169 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		56D7D4A5208A4F550073261D /* NNU-iOS-workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NNU-iOS-workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D7D4A8208A4F550073261D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56D7D4AF208A4F590073261D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,14 +54,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5688B41D208DFBD800E9E169 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				5688B41E208DFBFF00E9E169 /* FirebaseManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		56D7D49C208A4F550073261D = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +75,6 @@
 		56D7D4A7208A4F550073261D /* NNU-iOS-workshop */ = {
 			isa = PBXGroup;
 			children = (
-				5688B41D208DFBD800E9E169 /* Managers */,
 				56D7D4BA208A51060073261D /* MainViewController */,
 				56D7D4A8208A4F550073261D /* AppDelegate.swift */,
 				56D7D4AF208A4F590073261D /* Assets.xcassets */,
@@ -211,19 +200,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NNU-iOS-workshop/Pods-NNU-iOS-workshop-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -239,7 +220,6 @@
 			files = (
 				5688B411208DBFA300E9E169 /* ChatTableViewCell.swift in Sources */,
 				56D7D4A9208A4F550073261D /* AppDelegate.swift in Sources */,
-				5688B41F208DFBFF00E9E169 /* FirebaseManager.swift in Sources */,
 				56D7D4BE208A514B0073261D /* MainViewController.swift in Sources */,
 				5688B413208DC3D300E9E169 /* ChatModel.swift in Sources */,
 			);
@@ -380,7 +360,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "NNU-iOS-workshop/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NNU-iOS-workshop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -395,7 +378,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "NNU-iOS-workshop/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NNU-iOS-workshop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
